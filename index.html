@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TRAIN TIME</title>
+  <!-- Bootswatch Styling for Improving the Aesthetics -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+  <link rel="stylesheet" href="trains.css">
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- googlefont -->
+<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+  <style>
+    .panel-body a {
+      word-break: break-all;
+    }
+  </style>
+</head>
+
+<body>
+<!-- Employee Tracker -->
+  <div class="container">
+    <div class="jumbotron">
+      <img src="images/train.png" class="center">
+      <h1 class="text-center"> TRAIN TIME </h1>
+      <p class="text-center">choo choooooooooooo</p>
+    </div>
+
+    <!-- Current Train database list -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4>Train Times</h4>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered" id="trainTable">
+          <tr>
+            <th> Train Name </th>
+            <th  id="darkrow"> Destination </th>
+            <th> Frequency </th>
+            <th  id="darkrow"> Next Arrival </th>
+            <th> Minutes Away </th>
+          </tr>
+        </table>
+        <tbody id="trainTable">
+        </tbody>
+      </div>
+    </div>
+
+    <!-- Form to add new trains -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>Add Train</h4>
+          </div>
+
+          <form role="form" class="panel-body">
+            <div class="form-group">
+              <label for="">Train Name</label>
+              <input type="text" class="form-control" id="trainNameInput" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="">Destination</label>
+              <input type="text" class="form-control" id="destinationInput" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="">First Train Time (HH:mm - military time)</label>
+              <input type="text" class="form-control" id="timeInput" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="">Frequency (min)</label>
+              <input type="number" class="form-control" id="frequencyInput" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+      <script src="trains.js"></script>
+</body>
+
+</html>

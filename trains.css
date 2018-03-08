@@ -1,0 +1,36 @@
+tbody {
+	font-family: helvetica;
+	font-weight: 100;
+}
+
+#darkrow {
+	background-color: #fbfbfb;
+}
+
+h4 {
+	font-weight: 500 !important;
+	font-family: helvetica;
+}
+
+.jumbotron {
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	font-family: 'Rammetto One', cursive;
+}
+
+#trainImage {
+	margin: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+	background-color: #999999;
+}
